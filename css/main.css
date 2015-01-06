@@ -1,0 +1,173 @@
+@font-face {
+  font-family:      'Proxima Nova Regular';
+  font-style:       normal;
+  font-weight:      normal;
+  src:              local('Proxima Nova Regular'), url('fonts/proxima.woff') format('woff');
+}
+body {
+  height:           100%;
+  background-color: rgb(240, 240, 240);
+  font-family:      'Proxima Nova Regular'
+}
+a {
+  background:       transparent;
+}
+a:hover,
+a:active {
+  outline:          0;
+}
+
+
+
+.page {
+  max-width:        1120px;
+  width:            95%;
+  margin:           0 auto;
+}
+.page .banner {
+  background:       url('../img/dots.png') center 0px fixed #107098;
+  padding-top:      200px;
+  border:           10px solid white;
+  font-size:        36;
+  letter-spacing:   -1px;
+}
+.page .banner div {
+  background-color: rgba(0, 0, 0, 0.2);
+  color:            white;
+  text-transform:   uppercase;
+  font-weight:      800;
+  padding:          2px 10px;
+}
+.page .content {
+  padding:          20px;
+}
+
+
+
+.person {
+  font-size:        25;
+  font-weight:      800;
+  text-align:       center;
+}
+.person img {
+  border:           10px solid white;
+}
+
+
+
+header {
+  display:          block;
+  z-index:          9999;
+  position:         fixed;
+  top:              0;
+  left:             0;
+  width:            100%;
+  background-color: #fff;
+  box-shadow:       0 4px 10px rgba(0,0,0,.15);
+}
+header img {
+  clip:             rect(0px, 300px, 108px, 0px);
+  width:            300px;
+  padding-top:      20px;
+}
+header nav {
+  float:            right;
+  margin-bottom:    0px !important;
+  font-size:        14;
+  text-transform:   uppercase;
+  font-weight:      800;
+}
+header nav button {
+  text-transform:   uppercase !important;
+  font-weight:      800;
+}
+header nav li {
+  border-top:       5px solid transparent;
+}
+header nav li.active {
+  border-top:       5px solid rgb(129, 201, 201);
+}
+header nav li a {
+  color:            gray;
+  font-weight:      bold;
+  padding:          8px !important;
+}
+
+
+
+@media (min-width: 901px) {
+    header img {
+      transition:       all 0.4s;
+    }
+    header nav {
+      transition:       all 0.4s;
+      margin-top:       55px !important;
+    }
+    header.small img {
+      width:            200px;
+      position:         absolute;
+      clip:             rect(0px,200px,35px,0px);
+      padding:          0px;
+      margin:           5px 0px;
+    }
+    header.small nav {
+      margin:           0px !important;
+      font-size:        12 !important;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 900px) {
+    header img {
+      width:            200px;
+      position:         absolute;
+      clip:             rect(0px,200px,35px,0px);
+      padding:          0px;
+      margin:           5px 0px;
+    }
+    header nav {
+      margin:           0px !important;
+      font-size:        12 !important;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+      position:         inherit;
+    }
+    header img {
+      width:            500px;
+      padding:          20px;
+    }
+    header nav {
+      background-color: black;
+      color:            white;
+      width:            100%;
+    }
+    header nav.sticky {
+      position:         fixed;
+      top:              0;
+      left:             0;
+      z-index:          9999;
+    }
+    header nav button {
+      float: left !important;
+    }
+    header nav li {
+      border-top:       none !important;
+    }
+    header nav li.active {
+      background-color: rgb(129, 201, 201);
+    }
+    header .page {
+      width:            100% !important;
+      text-align:       center;
+    }
+    header .page .banner {
+      background-image: none !important;
+      background-color: rgb(129, 201, 201);
+    }
+}

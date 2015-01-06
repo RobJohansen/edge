@@ -1,0 +1,141 @@
+@font-face {
+  font-family:      "grapple";
+  src:              url('fonts/grapple.ttf')
+}
+
+html {
+  margin:           0;
+}
+.fs {
+  color:            gray;
+}
+
+/* HEADER */
+body {
+  height:           100%;
+  color:            rgb(30, 30, 30);
+}
+body,
+#section-head {
+  background-color: rgb(240, 240, 240);
+}
+#section-head {
+  position:         fixed;
+  width:            100%;
+  height:           120px;
+  z-index:          100;
+}
+#section-head div {
+  border-bottom:    20px solid gray;
+  width:            100%;
+  height:           120px;
+  position:         relative;
+  left:             425px;
+}
+
+/* SIDE BAR */
+#section-side {
+  font-family:      grapple;
+  font-size:        50;
+
+  position:         fixed;
+  width:            220px;
+  height:           100%;
+  margin-top:       120px;
+  border-right:     20px solid black;
+  z-index: 100;
+}
+#section-side .nav {
+  overflow-y:       auto;
+  height:           100%;
+}
+#section-side .nav > li > a,
+#section-side .nav > li:hover > a,
+#section-side .nav > li:focus > a {
+  color:            black;
+}
+
+#section-side .nav > li.title > a,
+#section-side .nav > li.title:hover > a,
+#section-side .nav > li.title:focus > a {
+  background-color: transparent;
+}
+
+#section-side .nav > li.active > a.menu, 
+#section-side .nav > li.active:hover > a.menu,
+#section-side .nav > li.active:focus > a.menu {
+  color:            white;
+
+  background-color: black;
+  background-size:  20px 20px;
+  background-image: linear-gradient(0deg, transparent 50%, rgba(255,255,255,.5) 50%);
+}
+#section-side .nav > li.active > a > div {
+  /*background-color: rgb(35, 10, 155);*/
+  background-color: gray;
+  background-size:  20px 20px;
+  background-image: linear-gradient(0deg, transparent 50%, rgba(255,255,255,.5) 50%);
+
+  position:         fixed;
+  left:             35px;
+  top:              44px;
+  width:            35px;
+  height:           20px;
+}
+
+
+
+.title {
+  font-size:        125;
+  position:         fixed !important;
+  top:              0px !important;
+  padding:          0px !important;
+  line-height:      100px !important;
+  background-color: transparent !important;
+}
+.title a {
+  padding:          0px !important;
+}
+
+
+
+/* BODY */
+#section-body {
+  padding-left:     220px;
+}
+
+#section-body .area {
+  padding-top:      120px;
+}
+#section-body .area-header {
+  font-family:      grapple;
+  font-size:        80;
+  text-align:       center;
+  color:            white;
+
+  width:            100%;
+
+  /*background-color: rgb(35, 10, 155);*/
+  background-color: black;
+  background-size:  20px 20px;
+  background-image: linear-gradient(0deg, transparent 50%, rgba(255,255,255,.5) 50%);
+}
+#section-body .area-content {
+  padding:          20px;
+  font-family:      'Lobster', cursive;
+  text-align:       center;
+  vertical-align:   center;
+  font-size: 30px;
+
+  height: 500px;
+}
+
+
+
+.person {
+  font-family:      grapple;
+  font-size:        40;
+}
+.person img {
+  border:           16px solid gray;
+}
